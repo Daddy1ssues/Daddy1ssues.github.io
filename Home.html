@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style/grid.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+  <body>
+    <div id="container">
+      <div id="bovenbalk" class="box">
+        <h1 class="bovenbalk">Home</h1>
+      </div>
+      <div id="navigatie" class="box">
+        <ol id="navi">
+          <li id="Inspiraties"> <a href="mijzelf.html">Over mijzelf</a> </li>
+          <li id="credits"> <a href="Games.html">Favorite Games</a></li>
+          <li id="random"> <a href="Favorite.html">Favorite Music</a></li>
+        </ol>
+      </div>
+      <div id="centrum" class="box">
+        <h3 class="song">Introductie</h3>
+        <p class="song">Dit is een kleine introductie naar de pagina die ik voor Informatica gemaakt heb. Rechts hiervan ziet u een kaart naar de locatie van mijn school (niet DDOSen a.u.b)</p>
+        <h3 id="links"><a href="https://imgur.com/gallery/x5ZNx">Klik Op Mij!</a></h3>
+      </div>
+      <div id="centrum2" class="box">
+        <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 52.362414, lng: 4.919442};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+      </script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaTvWG_l7R6OLB_7HVFFUnlKEIHmqwZrI&callback=initMap">
+</script>
+      </div>
+      <div id="footer" class="box">
+        <ul id="foot">
+          <li class="top"> <a href="#"></a> ©Karim inc.</li>
+          <li class="top2"> Contact:<a href="href="mailto:karim.kahtaoui@hotmail.com?Subject=bedankt%20website" target="_top"> karim.kahtaoui@hotmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

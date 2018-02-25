@@ -1,0 +1,323 @@
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50fr 30fr 75fr 12fr;
+  grid-template-areas: "head head head head"
+                       "nav nav nav nav"
+                       "body body body2 body2"
+                       "voet voet voet voet";
+}
+
+#bovenbalk {
+  grid-area: head;
+  background-color: #1E1E1E;
+  color: #FBFBFB;
+  text-align: center;
+  border-color:0px;
+  font-size: 25px;
+  font-family: Gill Sans, sans-serif;
+  font-weight: 700;
+  position: fixed;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 3px;
+}
+  h1.bovenbalk {
+  font-size: 30px;
+  color: white;
+}
+
+#navigatie {
+  background-color: #252424;
+  grid-area: nav;
+  font-size: 12px;
+  position: fixed;
+  width: 100%;
+  margin-top: 70px;
+}
+#navi {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: #252424;
+  grid-area: nav;
+  font-size: 15px;
+  width: 100%;
+  font-family: sans-serif;
+  color: #D5D2D2;
+  list-style-type: none;
+  align-items: center;
+  padding-left: 0px;
+  padding-bottom: 13px;
+  font-weight: bold;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  vertical-align: middle;
+}
+li {
+  width: 200px;
+  height: 30px;
+  margin: 0px;
+  margin-bottom: 0px;
+  padding-top: 10px;
+  padding-left:60px;
+  padding-right: 60px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#centrum {
+  background-color: #F4F3F3;
+  grid-area: body;
+  width:600px;
+  max-height:480px;
+  margin-left: 65px;
+  margin-bottom: 7px;
+  margin-top:-200px;
+  height: 500px;
+  border: 4px solid #E7E6E6;
+  font-family: sans-serif;
+  color: #4E4E4E;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+.vrienden {
+  border: solid 3px  #E7E6E6;
+}
+.tab {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#links {
+  margin-top: 140px;
+  background-color: #24181C;
+  text-align: center;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+#centrum2 {
+  background-color: #F4F3F3;
+  grid-area: body2;
+  width:500px;
+  height:160px;
+  margin-bottom: 7px;
+  margin-top:-200px;
+  max-height: 480px;
+  min-height: 480px;
+  border: 4px solid #E7E6E6;
+  font-family: sans-serif;
+  color: #4E4E4E;
+  padding-left: 0px;
+  margin-left: 0px;
+  padding-right:98px;
+}
+#map {
+       height: 455px;
+       width: 570px;
+       margin-left: 12px;
+       margin-top: 12px;
+      }
+
+#footer {
+  grid-area: voet;
+  background-color: #24181C;
+  bottom: 0;
+  width:90%;
+  height:20px;
+  margin-left: 65px;
+  margin-bottom: 0px;
+}
+#foot {
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  vertical-align: middle;
+  color: #D5D2D2;
+  list-style-type: none;
+  align-items: center;
+  font-family: sans-serif;
+  bottom: 0px;
+}
+.top {
+  width: 100px;
+  height: 30px;
+  margin: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  padding-left:10px;
+  padding-right: 140px;
+  text-align: center;
+}
+.top2 {
+  width: 400px;
+  height: 30px;
+  margin: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  padding-left:600px;
+}
+
+body {
+ margin-top: 0px;
+ margin-right: 0px;
+ margin-bottom: 0px;
+ margin-left: 0px
+}
+.box {
+  min-height: 40px;
+}
+
+#daft {
+  float: left;
+  width: 500px;
+  margin-left: 10px;
+}
+#cs {
+  float: left;
+  width: 500px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+#botw {
+  float: left;
+  width: 500px;
+  margin-left: 10px;
+  margin-top: -8px;
+}
+#LOZ {
+  float: left;
+  width: 500px;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+#fall {
+  margin-top: 12px;
+  margin-left: 12px;
+  width: 573px;
+}
+
+.song {
+  margin-left: 11px;
+}
+.hab {
+  text-align: center;
+  margin-left: 60px;
+  margin-top: 4px;
+
+}
+
+li {
+  width: 200px;
+  height: 30px;
+  margin: 0px;
+  margin-bottom: 0px;
+  padding-top: 10px;
+  padding-left:60px;
+  padding-right: 60px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#Inspiraties:hover, #credits:hover, #random:hover {
+  background-color: #1E1E1E;
+}
+
+a {
+   text-decoration:none;
+   color: #D5D2D2;
+}
+
+@media only screen and (max-width:818px) {
+
+
+   #bovenbalk, #navigatie, #centrum, #footer, #navi, #foot {
+    float: left;
+  }
+
+  #container {
+    display: grid;
+    grid-template-columns: 1fr 1fr .5fr 1fr;
+    grid-template-rows: 50fr 47fr 37.5fr 37.5fr 12fr;
+    grid-template-areas: "head head head head"
+                         "nav nav nav nav"
+                         "body body body body"
+                         "body2 body2 body2 body2"
+                         "voet voet voet voet";
+  }
+
+  #navi {
+      justify-content: flex-start;
+  }
+
+  li {
+    width: 100px;
+    height: 40px;
+    margin: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-left:25px;
+    padding-right: 25px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  #daft {
+    max-width: 70%;
+  }
+
+  #navigatie, #bovenbalk {
+    width: 100%;
+  }
+
+  #centrum, #centrum2{
+    margin-left: 2px;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-top: -510px;
+  }
+
+  #centrum2 {
+    margin-top: -245px;
+  }
+
+  #LOZ {
+    width: 90%;
+  }
+
+  #centrum, #centrum2, #footer {
+    width: 97%;
+  }
+
+  #footer {
+    margin-left: 2px;
+  }
+
+  #botw {
+    width: 90%;
+  }
+
+  #cs {
+    width: 90%;
+  }
+
+  #fall {
+    margin-top: 12px;
+    margin-left: 8px;
+    width: 95%;
+  }
+
+  .hab {
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 4px;
+  }
